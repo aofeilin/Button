@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-xs-9il" customClass="ImageButton">
+                                <rect key="frame" x="84" y="19" width="163" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="5Cq-4n-eDq"/>
+                                    <constraint firstAttribute="height" constant="85" id="pn4-Ij-3aD"/>
+                                </constraints>
+                                <state key="normal" title="78458777默认" image="main_pifa.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFc-s1-Rkm" customClass="ImageButton">
+                                <rect key="frame" x="82" y="165" width="163" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="AEa-8x-L0H"/>
+                                </constraints>
+                                <state key="normal" title="78458777top" image="main_pifa.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE2-b4-5Pf" customClass="ImageButton">
+                                <rect key="frame" x="84" y="270" width="163" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="sND-Jj-Mxc"/>
+                                </constraints>
+                                <state key="normal" title="778458777down" image="main_pifa.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1t-IB-Spa" customClass="ImageButton">
+                                <rect key="frame" x="91" y="375" width="163" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Eoo-Bg-Jxa"/>
+                                </constraints>
+                                <state key="normal" title="78458777right" image="main_pifa.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XFc-s1-Rkm" firstAttribute="top" secondItem="QxB-xs-9il" secondAttribute="bottom" constant="61" id="9Tm-rU-Kxs"/>
+                            <constraint firstItem="eE2-b4-5Pf" firstAttribute="top" secondItem="XFc-s1-Rkm" secondAttribute="bottom" constant="20" id="Bvc-1a-nTE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m1t-IB-Spa" secondAttribute="bottom" constant="20" id="HkW-Ja-oPq"/>
+                            <constraint firstItem="m1t-IB-Spa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="91" id="Par-5Q-Z4u"/>
+                            <constraint firstAttribute="trailing" secondItem="QxB-xs-9il" secondAttribute="trailing" constant="73" id="Vbc-Pl-JaE"/>
+                            <constraint firstAttribute="trailing" secondItem="eE2-b4-5Pf" secondAttribute="trailing" constant="73" id="bCt-YB-7CV"/>
+                            <constraint firstAttribute="trailing" secondItem="m1t-IB-Spa" secondAttribute="trailing" constant="66" id="dhX-pf-l8P"/>
+                            <constraint firstItem="XFc-s1-Rkm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="eLR-C7-sfO"/>
+                            <constraint firstItem="m1t-IB-Spa" firstAttribute="top" secondItem="eE2-b4-5Pf" secondAttribute="bottom" constant="20" id="rQR-8f-Kcr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XFc-s1-Rkm" secondAttribute="trailing" constant="59" id="rgH-WW-1aG"/>
+                            <constraint firstItem="eE2-b4-5Pf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="84" id="trL-i1-nKC"/>
+                            <constraint firstItem="QxB-xs-9il" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="84" id="xqr-dd-6QQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Btn0" destination="QxB-xs-9il" id="jvX-7B-Qnd"/>
+                        <outlet property="Btn1" destination="XFc-s1-Rkm" id="BO5-Vo-EMQ"/>
+                        <outlet property="Btn2" destination="eE2-b4-5Pf" id="TIt-O9-eRJ"/>
+                        <outlet property="Btn3" destination="m1t-IB-Spa" id="Cve-Ds-yJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_pifa.png" width="32" height="39"/>
+    </resources>
+</document>
